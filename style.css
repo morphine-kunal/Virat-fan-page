@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(88, 88, 88);
+    
+}
+hr{
+    color: #ccc;
+    opacity: 0.3;
+}
+p{
+    margin-left: 10px;
+}
+h4{
+    margin-left: 10px;
+}
+img{
+    margin-left: 10px;
+}
+#site-header{
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    gap: 50px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+#site-header.hide{
+    top: -60px;
+}
+
+#site-header a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 16px;
+    
+}
+
+#site-header a:hover{
+    background-color: #fff;
+    color: black;
+    border-radius: 12px;
+}
+
+
+#main-img {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#main-img img{
+    width: auto;
+    height: auto;
+    max-width: 89%;
+
+}
+
+
+#first{
+    background-color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: auto;
+    margin: auto;
+    margin-top: 7px;
+    width: 89%;
+    padding: 10px;
+    border-radius: 20px;
+}
+#first h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+#second{
+    background-color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: auto;
+    margin: auto;
+    margin-top: 7px;
+    width: 89%;
+    padding: 10px;
+    border-radius: 20px;
+}
+#second h1{
+    text-align: center;
+    font-size: 60px;
+}
+#second #child{
+    width: auto;
+    height: 200px;
+    cursor: pointer;
+}
+#second #child:hover{
+    opacity: 0.5;
+}
+#second .container {
+    display: grid;
+    /* align-items: center; */
+    grid-template-columns: 4fr 21fr 0fr 0fr;
+    column-gap: 5px;
+}
+
+#third{
+    background-color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: auto;
+    margin: auto;
+    margin-top: 7px;
+    width: 89%;
+    padding: 10px;
+    border-radius: 20px;
+}
+#third h1{
+    text-align: center;
+    font-size: 60px;
+}
+#third img{
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+#third h4{
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+#third h3{
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgba(64, 63, 63, 0.921);
+}
+
+#third #test-img:hover{
+    opacity: 0.5;
+}
+#third #odi-img:hover{
+    opacity: 0.5;
+}
+#third #t20-img:hover{
+    opacity: 0.5;
+}
+#third ul{
+    margin-left: 77px;
+}
+#third h5{
+    margin-left: 36px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+
+}
+
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: auto;
+}
+
+.modal-content{
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+#img01{
+    height: 400px;
+    width: auto;
+}
+
+
+@keyframes zoom{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    
+}
+
+.close:hover,
+.close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:700px){
+    .modal-content{
+        width: 100%;
+    }
+}
+
+#fourth{
+    background-color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: auto;
+    margin: auto;
+    margin-top: 7px;
+    width: 89%;
+    padding: 10px;
+    border-radius: 20px;
+}
+#fourth h1{
+    text-align: center;
+    font-size: 60px;
+}
+#fourth #foundation{
+    width: auto;
+    height: 200px;
+    border-radius: 12px;
+    float: right;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#fourth #avk{
+        width: auto;
+        height: 200px;
+        border-radius: 12px;
+        float: right;
+        cursor: pointer;
+    
+}
+
+#fourth .container {
+    display: inline-block;
+    
+}
+
+#fourth .container #formal {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+#fourth #avk:hover{
+    opacity: 0.5;
+}
+#fourth #formal:hover{
+    opacity: 0.5;
+}
+#fourth #foundation:hover{
+    opacity: 0.5;
+}
